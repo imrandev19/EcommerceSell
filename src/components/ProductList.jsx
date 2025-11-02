@@ -1,4 +1,6 @@
 import React from 'react'
+import Categories from './Categories';
+import ProductCard from './ProductCard';
 // TEMPORARY
 const products = [
   {
@@ -112,7 +114,14 @@ const products = [
 ];
 const ProductList = () => {
   return (
-    <div>ProductList</div>
+    <div className='w-full'>
+      <Categories/>
+      <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12'>
+        {products.map(product=>(
+          <ProductCard key={product.id} product={product}/>
+        ))}
+      </div>
+    </div>
   )
 }
 
