@@ -7,7 +7,7 @@ const ShoppingCartIcon = () => {
   return (
     <Link href='/cart' className='relative'>
         <ShoppingCart className='w-4 h-4 text-gray-600'/>
-        <span className='absolute -top-3 -right-3 bg-amber-400 text-gray-600 text-xs flex items-center justify-center rounded-full w-4 h-4'>0</span>
+        <span className='absolute -top-3 -right-3 bg-amber-400 font-medium text-gray-600 text-xs flex items-center justify-center rounded-full w-4 h-4'>0</span>
     </Link>
   )
 }
