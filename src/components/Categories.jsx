@@ -62,7 +62,7 @@ const Categories = () => {
     const handleChange = (slug)=>{
         const params = new URLSearchParams(searchParams)
         params.set("category", slug || "all")
-        router.push(`${pathname}/?${params.toString()}`, {scroll:false})
+        router.push(`${pathname}?${params.toString()}`, { scroll: false })
     }
   return (
     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 bg-gray-100 p-2 rounded-lg mb-4 text-sm'>
